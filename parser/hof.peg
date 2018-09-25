@@ -4,7 +4,7 @@
 package parser
 
 import (
-    "github.com/hofstadter-io/hof-lang/lib/ast"
+    "github.com/hofstadter-io/hof-lang/ast"
     "github.com/kr/pretty"
 )
 

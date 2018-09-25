@@ -15,7 +15,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/hofstadter-io/hof-lang/lib/ast"
+	"github.com/hofstadter-io/hof-lang/ast"
 )
 
 func toIfaceSlice(v interface{}) []interface{} {
