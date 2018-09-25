@@ -1,2 +1,5 @@
 # hof-lang
-Syntax for writing designs for Hofstadter DSLs
+
+Alternative language for writing designs for Hofstadter DSLs
+
+
