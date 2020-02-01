@@ -4,7 +4,7 @@
 package parser
 
 import (
-    "github.com/hofstadter-io/hof-lang/ast"
+    "github.com/hofstadter-io/hof-lang/pkg/ast"
     "github.com/kr/pretty"
 )
 
@@ -35,9 +35,9 @@ Definitions <- defs:( Definition )* __ {
 	ret := []ast.Definition {}
 	vals := toIfaceSlice(defs)
 
-    for _, def := range vals {
-    	ret = append(ret, def.(ast.Definition))
-    }
+  for _, def := range vals {
+    ret = append(ret, def.(ast.Definition))
+  }
 
 	return ret, nil
 }
@@ -58,9 +58,9 @@ DefnBody <- '{' __ defs:( DefnField )* __ '}' __ {
 
 	vals := toIfaceSlice(defs)
 
-    for _, val := range vals {
-    	ret = append(ret, val.(ast.ASTNode))
-    }
+  for _, val := range vals {
+    ret = append(ret, val.(ast.ASTNode))
+  }
 
 	return ret, nil
 }
